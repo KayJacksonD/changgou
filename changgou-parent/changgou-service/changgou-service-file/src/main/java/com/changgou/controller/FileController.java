@@ -51,7 +51,7 @@ public class FileController {
             TrackerServer trackerServer = trackerClient.getConnection();
             StorageClient storageClient = new StorageClient(trackerServer, null);
             byte[] result = storageClient.download_file("group1", "M00/00/00/wKjThF2oMwiAADr9AAEIVmrHuhY185.PNG");
-            IOUtils.write(result,new FileOutputStream(new File("D:\\test\\test.png")));
+            IOUtils.write(result, new FileOutputStream(new File("D:\\test\\test.png")));
             return new Result(true, StatusCode.OK, "下载文件成功！", result);
         } catch (Exception e) {
             e.printStackTrace();
@@ -59,4 +59,8 @@ public class FileController {
         return null;
     }
 
+    @GetMapping("/download")
+    public Result test() {
+        return null;
+    }
 }
