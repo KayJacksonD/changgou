@@ -1,0 +1,10 @@
+${AnsiColor.BRIGHT_CYAN} ___  __    ________      ___    ___     ___  ________  ________  ___  __    ________  ________  ________       ________
+${AnsiColor.BRIGHT_GREEN}|\  \|\  \ |\   __  \    |\  \  /  /|   |\  \|\   __  \|\   ____\|\  \|\  \ |\   ____\|\   __  \|\   ___  \    |\   ___ \
+${AnsiColor.YELLOW}\ \  \/  /|\ \  \|\  \   \ \  \/  / /   \ \  \ \  \|\  \ \  \___|\ \  \/  /|\ \  \___|\ \  \|\  \ \  \\ \  \   \ \  \_|\ \
+${AnsiColor.BRIGHT_RED} \ \   ___  \ \   __  \   \ \    / /  __ \ \  \ \   __  \ \  \    \ \   ___  \ \_____  \ \  \\\  \ \  \\ \  \   \ \  \ \\ \
+${AnsiColor.BRIGHT_BLACK}  \ \  \\ \  \ \  \ \  \   \/  /  /__|\  \\_\  \ \  \ \  \ \  \____\ \  \\ \  \|____|\  \ \  \\\  \ \  \\ \  \ __\ \  \_\\ \
+${AnsiColor.BRIGHT_MAGENTA}   \ \__\\ \__\ \__\ \__\__/  / /|\__\ \________\ \__\ \__\ \_______\ \__\\ \__\____\_\  \ \_______\ \__\\ \__\\__\ \_______\
+${AnsiColor.BRIGHT_YELLOW}    \|__| \|__|\|__|\|__|\___/ / \|__|\|________|\|__|\|__|\|_______|\|__| \|__|\_________\|_______|\|__| \|__\|__|\|_______|
+${AnsiColor.BRIGHT_CYAN}                        \|___|/                                                \|_________|
+Application Version: ${application.version}${application.formatted-version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
