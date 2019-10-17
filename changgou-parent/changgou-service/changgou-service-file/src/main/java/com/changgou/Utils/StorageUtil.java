@@ -1,10 +1,7 @@
 package com.changgou.Utils;
 
 import org.csource.common.MyException;
-import org.csource.fastdfs.ClientGlobal;
-import org.csource.fastdfs.StorageClient;
-import org.csource.fastdfs.TrackerClient;
-import org.csource.fastdfs.TrackerServer;
+import org.csource.fastdfs.*;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
@@ -32,5 +29,15 @@ public class StorageUtil {
     }
     public static int getPort() {
         return ClientGlobal.getG_tracker_http_port();
+    }
+    public static StorageServer getStoreStorage(String group_name) {
+        StorageServer storeStorage = null;
+        try {
+            trackerServer = trackerClient.getConnection();
+            storeStorage = trackerClient.getStoreStorage(trackerServer, group_name);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return storeStorage;
     }
 }
