@@ -53,4 +53,12 @@ public class BrandController {
         List<Brand> list = brandService.findPageByCondition(brand, curPage, size);
         return new Result(true, StatusCode.OK, "条件分页查询成功！", list);
     }
+    @PostMapping("/test")
+    public Result test(@PathVariable("curPage") Integer curPage,
+                                      @PathVariable("size") Integer size,
+                                      @RequestBody Brand brand) {
+
+        return new Result(true, StatusCode.OK, "条件分页查询成功！");
+    }
+
 }
