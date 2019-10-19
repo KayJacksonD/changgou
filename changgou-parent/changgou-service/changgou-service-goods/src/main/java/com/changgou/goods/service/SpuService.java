@@ -1,5 +1,6 @@
 package com.changgou.goods.service;
 
+import com.changgou.goods.pojo.Good;
 import com.changgou.goods.pojo.Spu;
 import com.github.pagehelper.PageInfo;
 
