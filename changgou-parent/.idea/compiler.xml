@@ -14,6 +14,7 @@
         <module name="changgou-service-goods" />
         <module name="changgou-service-goods-api" />
         <module name="changgou-web" />
+        <module name="code-template" />
       </profile>
     </annotationProcessing>
   </component>
