@@ -66,4 +66,6 @@ public interface BrandService {
      * @return
      */
     List<Brand> findAll();
+
+    List<Brand> findBrandByCategoryId(Integer id);
 }

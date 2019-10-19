@@ -24,6 +24,12 @@ public class BrandController {
     @Autowired
     private BrandService brandService;
 
+    @GetMapping("/category/{id}")
+    public Result<Brand> findBrandByCategoryId(@PathVariable Integer id){
+        List<Brand> list = brandService.findBrandByCategoryId(id);
+        return new Result<Brand>(true,StatusCode.OK,"查询品牌成功",list);
+    }
+
     /***
      * Brand分页条件搜索实现
      * @param brand

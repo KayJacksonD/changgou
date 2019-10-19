@@ -25,6 +25,17 @@ public class TemplateController {
     private TemplateService templateService;
 
     /***
+     * 根据ID查询Template数据
+     * @param id
+     * @return
+     */
+    @GetMapping("/search/{id}")
+    public Result<Template> findTemplateByCategoryId(@PathVariable Integer id){
+        Template template = templateService.findTemplateByCategoryId(id);
+        return new Result<Template>(true,StatusCode.OK,"根据分类查询模板成功",template);
+    }
+
+    /***
      * Template分页条件搜索实现
      * @param template
      * @param page
