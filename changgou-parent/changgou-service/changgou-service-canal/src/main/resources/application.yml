@@ -27,6 +27,8 @@ hystrix:
           enabled: true
         isolation:
           strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 30000
 #canal配置
 canal:
   client:
@@ -34,3 +36,5 @@ canal:
       example:
         host: 192.168.211.132
         port: 11111
+ribbon:
+  ReadTimeout: 300000

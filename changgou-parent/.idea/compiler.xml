@@ -15,6 +15,8 @@
         <module name="changgou-service-goods-api" />
         <module name="changgou-web" />
         <module name="changgouservicecanal" />
+        <module name="changgouservicecontent" />
+        <module name="changgouservicecontentapi" />
         <module name="code-template" />
       </profile>
     </annotationProcessing>
