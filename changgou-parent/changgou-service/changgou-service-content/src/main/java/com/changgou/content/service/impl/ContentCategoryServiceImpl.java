@@ -20,7 +20,7 @@ import java.util.List;
 @Service
 public class ContentCategoryServiceImpl implements ContentCategoryService {
 
-    @Autowired
+    @Autowired(required = false)
     private ContentCategoryMapper contentCategoryMapper;
 
 
