@@ -5,7 +5,7 @@ import com.xpand.starter.canal.annotation.*;
 
 import java.util.List;
 
-@CanalEventListener
+//@CanalEventListener
 public class CanalDataListener {
     @InsertListenPoint
     public void onEnventInsert(CanalEntry.EntryType entryType, CanalEntry.RowData rowData) {
