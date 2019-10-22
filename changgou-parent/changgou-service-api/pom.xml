@@ -17,13 +17,14 @@
     <modules>
         <module>changgou-service-goods-api</module>
         <module>changgou-service-content-api</module>
+        <module>changgou-service-search-api</module>
     </modules>
 
     <dependencies>
         <!--通用的common-->
         <dependency>
             <groupId>com.changgou</groupId>
-            <artifactId>changgou-common</artifactId>
+            <artifactId>changgou-common-db</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

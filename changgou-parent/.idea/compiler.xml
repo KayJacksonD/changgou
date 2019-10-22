@@ -17,6 +17,8 @@
         <module name="changgouservicecanal" />
         <module name="changgouservicecontent" />
         <module name="changgouservicecontentapi" />
+        <module name="changgouservicesearch" />
+        <module name="changgouservicesearchapi" />
         <module name="code-template" />
       </profile>
     </annotationProcessing>
